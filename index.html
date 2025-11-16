@@ -123,6 +123,41 @@
             color: #3b82f6;
         }
 
+        .resource-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .resource-link {
+            display: block;
+            padding: 20px 25px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .resource-link:hover {
+            background: #f1f5f9;
+            border-color: #3b82f6;
+            transform: translateX(5px);
+        }
+
+        .resource-link-title {
+            font-weight: 600;
+            color: #0f172a;
+            font-size: 1.05em;
+            margin-bottom: 5px;
+        }
+
+        .resource-link-url {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
         @media (max-width: 600px) {
             body {
                 padding: 30px 15px;
@@ -160,7 +195,7 @@
         RCE replaces attention mechanisms with <strong>deterministic coherence graphs</strong>. Every inference is fully traceable. Every output is explainable. Regulatory compliance is native to the architecture.
     </p>
     <p>
-        <strong>Based on peer-reviewed published research</strong> — The architecture is documented in published work available on Zenodo, with empirical validation and theoretical foundations.
+        <strong>Based on peer-reviewed published research</strong> — Published in Springer's <em>Cognitive Computation</em> journal and available on Zenodo, with empirical validation and theoretical foundations.
     </p>
     <ul>
         <li><strong>Plug into existing pipelines</strong> — RCE integrates via standard APIs into any AI system. No infrastructure rewrite needed. Reduces hallucinations immediately.</li>
@@ -183,12 +218,16 @@
     </p>
 
     <h2>Validation</h2>
-    <p>
-        Peer-reviewed research demonstrating empirical performance validation: <a href="https://ismaikami.github.io/rce-llm-empirical-validation/" target="_blank">ismaikami.github.io/rce-llm-empirical-validation</a>
-    </p>
-    <p>
-        Open implementation: <a href="https://github.com/ismaikami/rce-llm-empirical-validation" target="_blank">github.com/ismaikami/rce-llm-empirical-validation</a>
-    </p>
+    <div class="resource-links">
+        <a href="https://ismaikami.github.io/rce-llm-empirical-validation/" class="resource-link" target="_blank">
+            <div class="resource-link-title">📄 Published Research & Empirical Validation</div>
+            <div class="resource-link-url">ismaikami.github.io/rce-llm-empirical-validation</div>
+        </a>
+        <a href="https://github.com/ismaikami/rce-llm-empirical-validation" class="resource-link" target="_blank">
+            <div class="resource-link-title">💻 Open Implementation</div>
+            <div class="resource-link-url">github.com/ismaikami/rce-llm-empirical-validation</div>
+        </a>
+    </div>
 
     <div class="cta">
         <p>Interested in investing or partnering?</p>
